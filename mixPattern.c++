@@ -44,16 +44,20 @@ int main()
 int n;
 cout<<"Enter value of n: ";
 cin>>n;
+ 
+int i, j;
 
-int i =1;
-while(i<=n){
-   int j=1;
-   while(j<=n)
-    {
-        
+for(i=1; i<=n; i++){
+    for(j=0; j<n-i+1; j++){
+        cout<<j;
     }
-
-}
-
+    for(j=1; j<=2*i+1; j++){
+        cout << "*";
+    }
+    for(i=1; i<n-i+1; j++){
+        cout<<j;
+    }
+    cout<<endl;
+    }
    return 0;
 }
